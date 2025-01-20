@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+/* Initial Setup */
+* {
+  font-family: 'Quicksand', serif;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+header,
+main {
+  max-width: 1160px;
+  margin: 0 auto;
+}
