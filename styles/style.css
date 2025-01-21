@@ -10,10 +10,91 @@
 }
 body {
   max-width: 1440px;
-  margin: 0 auto;
+  margin: 20px auto 0px;
 }
-header,
-main {
+header > div,
+main > div {
   max-width: 1160px;
   margin: 0 auto;
+}
+
+/* Shared Styles */
+.display-flex {
+  display: flex;
+}
+
+/* -------------- */
+/* Header Section */
+/* -------------- */
+
+/* nav styles*/
+.nav {
+  justify-content: space-between;
+  align-items: center;
+}
+.brand {
+  align-items: center;
+  gap: 11px;
+}
+.brand-img img {
+  width: 100%;
+}
+.brand-title {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.8rem;
+}
+.list-items {
+  gap: 32px;
+}
+.list-item {
+  list-style: none;
+}
+.item {
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.8rem;
+}
+.btn-nav {
+  padding: 10px 60px;
+  background-color: orange;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.8rem;
+  border-radius: 12px;
+  border: none;
+}
+.bars {
+  display: none;
+}
+
+/* ----------------- */
+/* Responsive Design */
+/* ----------------- */
+
+/* Mobile Devices */
+@media screen and (max-width: 576px) {
+  .main {
+    padding: 0 16px;
+  }
+  .nav {
+    justify-content: space-between;
+    border-bottom: 0.5px solid orange;
+    padding: 0px 16px 12px;
+  }
+  .brand-title,
+  .list-items,
+  .btn-nav {
+    display: none;
+  }
+  .bars {
+    display: block;
+    height: 30px;
+    width: 30px;
+  }
+  .bars img {
+    width: 100%;
+  }
 }
