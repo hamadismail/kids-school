@@ -10,7 +10,7 @@
 }
 body {
   max-width: 1440px;
-  margin: 20px auto 0px;
+  margin: 0px auto;
 }
 header > div,
 section > div,
@@ -22,6 +22,14 @@ footer > div {
 /* Shared Styles */
 .display-flex {
   display: flex;
+}
+button {
+  cursor: pointer;
+  transition: transform 0.3s ease-in;
+}
+button:hover {
+  opacity: 0.7;
+  transform: scale(90%);
 }
 
 /* -------------- */
@@ -202,7 +210,7 @@ footer > div {
   color: #666666;
   margin: 0px 70px 40px 34px;
 }
-.highlight-card button {
+.highlight-card .card-btn {
   position: absolute;
   padding: 16px 18px;
   font-size: 1rem;
@@ -234,13 +242,13 @@ footer > div {
   font-size: 1rem;
   margin: 30px;
 }
-.grid-card .card button {
+.grid-card .card .card-btn {
   position: absolute;
   padding: 10px 18px;
   font-size: 1rem;
   font-weight: 500;
   color: white;
-  background-color: #3cd8e8;
+  background-color: #95b226;
   border: none;
   border-radius: 48px;
   top: 54%;
@@ -277,8 +285,7 @@ footer {
   align-items: center;
   max-width: 300px;
 }
-
-.footer-brand img {
+.footer-brand-img img {
   width: 100%;
 }
 .footer-title {
@@ -312,6 +319,17 @@ footer {
   color: white;
   font-weight: 700;
   margin-bottom: 30px;
+}
+
+/* Use Marquee */
+marquee {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  background-color: #01acfd;
+  font-weight: 700;
+  color: white;
+  text-align: center;
 }
 /* ----------------- */
 /* Responsive Design */
@@ -380,7 +398,7 @@ footer {
     margin-left: 16px;
     margin-right: 16px;
   }
-  .grid-card .card button {
+  .grid-card .card .card-btn {
     padding: 6px 12px;
     font-size: 0.6rem;
     top: 53%;
