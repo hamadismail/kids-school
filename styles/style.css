@@ -394,6 +394,9 @@ marquee {
   }
 
   /* Stories Section */
+  .card-containers {
+    justify-content: center;
+  }
   .grid-card {
     margin-left: 16px;
     margin-right: 16px;
@@ -426,5 +429,27 @@ marquee {
   .footer-nav,
   .footer-social {
     margin: 0 16px;
+  }
+}
+
+/* Meduim Devices */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .highlight-card {
+    display: none;
+  }
+  .nav,
+  .banner,
+  .cards,
+  .grid-card,
+  .footer {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .banner {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .card-containers {
+    justify-content: center;
   }
 }
